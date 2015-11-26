@@ -57,3 +57,21 @@ app.get('/auth/gitbook/callback',
     res.redirect('/');
   });
 ```
+
+#### With GitBook Enterprise
+
+`GitBookStrategy` works well with [GitBook Enterprise](https://enterprise.gitbook.com):
+
+```js
+passport.use(new GitBookStrategy({
+    clientID: GITBOOK_CLIENT_ID,
+    clientSecret: GITBOOK_CLIENT_SECRET,
+    endpoint: "https://gitbook.myCompany.com/api/"
+  },
+  function(accessToken, refreshToken, profile, done) {
+    User.findOrCreate({ gitbookId: profile.id }, function (err, user) {
+      return done(err, user);
+    });
+  }
+));
+```
