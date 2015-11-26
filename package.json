@@ -4,8 +4,16 @@
     "description": "",
     "main": "lib/index.js",
     "author": "Samy Pesse <samypesse@gmail.com>",
+    "keywords": ["passport", "oauth", "oauth2", "authentication", "gitbook", "api"],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/GitbookIO/passport-gitbook.git"
+    },
+    "bugs": {
+        "url": "http://github.com/GitbookIO/passport-gitbook/issues"
+    },
     "license": "Apache-2.0",
     "dependencies": {
-
+        "passport-strategy": "1.x.x"
     }
 }
