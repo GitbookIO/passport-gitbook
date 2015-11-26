@@ -1,0 +1,12 @@
+{
+  "type":"User",
+  "id": "55c7c38d86606665de70a555",
+  "username":"samypesse",
+  "name":"Samy Pessé",
+  "location": "France",
+  "website": "https://github.com/SamyPesse",
+  "urls":{
+    "profile":"https://www.gitbook.com/@samypesse",
+    "avatar":"https://ek8whxe.cloudimg.io/s/width/220/https://www.gitbook.com/api/author/samypesse/avatar?v=11.4.0"
+  }
+}

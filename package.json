@@ -15,5 +15,12 @@
     "license": "Apache-2.0",
     "dependencies": {
         "passport-oauth2": "1.x.x"
+    },
+    "devDependencies": {
+        "mocha": "1.x.x",
+        "chai": "1.x.x"
+    },
+    "scripts": {
+        "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
     }
 }
