@@ -1,0 +1,11 @@
+{
+    "name": "passport-gitbook",
+    "version": "0.0.0",
+    "description": "",
+    "main": "lib/index.js",
+    "author": "Samy Pesse <samypesse@gmail.com>",
+    "license": "Apache-2.0",
+    "dependencies": {
+
+    }
+}
