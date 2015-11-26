@@ -1,5 +1,8 @@
 # Passport-GitBook
 
+[![npm version](https://badge.fury.io/js/passport-gitbook.svg)](http://badge.fury.io/js/passport-gitbook)
+[![Build Status](https://travis-ci.org/GitbookIO/passport-gitbook.svg?branch=master)](https://travis-ci.org/GitbookIO/passport-gitbook)
+
 [Passport](http://passportjs.org/) strategy for authenticating with [GitBook](https://www.gitbook.com/)
 using the OAuth 2.0 API.
 
