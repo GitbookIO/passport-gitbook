@@ -82,13 +82,13 @@ app.get('/login', function(req, res){
 
 // GET /auth/gitbook
 //   Use passport.authenticate() as route middleware to authenticate the
-//   request.  The first step in GitHub authentication will involve redirecting
-//   the user to gitbook.com.  After authorization, GitHubwill redirect the user
+//   request.  The first step in GitBook authentication will involve redirecting
+//   the user to gitbook.com.  After authorization, GitBook will redirect the user
 //   back to this application at /auth/gitbook/callback
 app.get('/auth/gitbook',
     passport.authenticate('gitbook'),
     function(req, res){
-        // The request will be redirected to GitHub for authentication, so this
+        // The request will be redirected to GitBook for authentication, so this
         // function will not be called.
     });
 
