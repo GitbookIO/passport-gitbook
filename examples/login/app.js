@@ -3,9 +3,9 @@ var passport = require('passport');
 var util = require('util');
 var GitBookStrategy = require('passport-gitbook').Strategy;
 
-var GITBOOK_CLIENT_ID = "--insert-gitbook-client-id-here--"
-var GITBOOK_CLIENT_SECRET = "--insert-gitbook-client-secret-here--";
-
+var GITBOOK_CLIENT_ID = process.env.GITBOOK_CLIENT_ID;
+var GITBOOK_CLIENT_SECRET = process.env.GITBOOK_CLIENT_SECRET;
+var GITBOOK_ENDPOINT = process.env.GITBOOK_ENDPOINT;
 
 // Passport session setup.
 //   To support persistent login sessions, Passport needs to be able to
