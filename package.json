@@ -1,7 +1,7 @@
 {
     "name": "passport-gitbook",
     "version": "0.0.0",
-    "description": "",
+    "description": "GitBook authentication strategy for Passport.",
     "main": "lib/index.js",
     "author": "Samy Pesse <samypesse@gmail.com>",
     "keywords": ["passport", "oauth", "oauth2", "authentication", "gitbook", "api"],
@@ -14,6 +14,6 @@
     },
     "license": "Apache-2.0",
     "dependencies": {
-        "passport-strategy": "1.x.x"
+        "passport-oauth2": "1.x.x"
     }
 }
