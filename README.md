@@ -24,7 +24,7 @@ and OAuth 2.0 tokens.  The strategy requires a `verify` callback, which accepts
 these credentials and calls `done` providing a user, as well as `options`
 specifying a client ID, client secret, and callback URL.
 
-```
+```js
 passport.use(new GitBookStrategy({
     clientID: GITBOOK_CLIENT_ID,
     clientSecret: GITBOOK_CLIENT_SECRET,
@@ -46,7 +46,7 @@ authenticate requests.
 For example, as route middleware in an [Express](http://expressjs.com/)
 application:
 
-```
+```js
 app.get('/auth/gitbook',
   passport.authenticate('gitbook'));
 
