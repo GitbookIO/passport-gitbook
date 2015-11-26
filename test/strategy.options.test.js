@@ -3,17 +3,17 @@ var GitBookStrategy = require('../lib/strategy');
 
 describe('Strategy#userProfile', function() {
 
-    describe('loading profile using custom URL', function() {
+    describe('loading profile using custom endpoint', function() {
         var strategy =  new GitBookStrategy({
                 clientID: 'ABC123',
                 clientSecret: 'secret',
-                userProfileURL: 'https://gitbook.corpDomain/api/account'
+                endpoint: 'https://gitbook.corpDomain/api/'
             },
             function() {});
 
         // mock
         strategy._oauth2.get = function(url, accessToken, callback) {
-            if (url != 'https://gitbook.corpDomain/api/account') { return callback(new Error('wrong url argument')); }
+            if (url != 'https://gitbook.corpdomain/api/account') { return callback(new Error('wrong url argument')); }
             if (accessToken != 'token') { return callback(new Error('wrong token argument')); }
 
             var body = fs.readFileSync('test/data/example.json', 'utf8');
