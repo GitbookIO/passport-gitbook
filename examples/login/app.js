@@ -30,7 +30,7 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new GitBookStrategy({
         clientID: GITBOOK_CLIENT_ID,
         clientSecret: GITBOOK_CLIENT_SECRET,
-        callbackURL: "http://127.0.0.1:3000/auth/gitbook/callback"
+        callbackURL: "http://localhost:3000/auth/gitbook/callback"
     },
     function(accessToken, refreshToken, profile, done) {
         // asynchronous verification, for effect...
